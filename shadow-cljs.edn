@@ -1,0 +1,13 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+ :dev-http {8080 "public"}
+
+ :dependencies
+ [[reagent "1.1.1"]]
+
+ :builds
+ {:app {:target :browser 
+        :modules {:main {:init-fn tailwindui.main/init}}}}}
