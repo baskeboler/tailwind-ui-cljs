@@ -6,7 +6,8 @@
  :dev-http {8080 "public"}
 
  :dependencies
- [[reagent "1.1.1"]]
+ [[reagent "1.1.1"]
+  [keechma "0.3.14"]]
 
  :builds
  {:app {:target :browser 
