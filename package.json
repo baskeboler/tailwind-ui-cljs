@@ -2,14 +2,24 @@
   "name": "tailwind-ui-cljs",
   "version": "0.0.1",
   "private": true,
-  "devDependencies": {
-    "shadow-cljs": "2.20.7",
-    "tailwindcss": "^3.2.2"
+  "scripts": {
+    "watch:cljs": "shadow-cljs watch app",
+    "watch:css": "tailwindcss -i src/css/styles.css -o public/css/styles.css --watch",
+    "watch": "concurrently npm:watch:*",
+    "release:cljs": "shadow-cljs release app",
+    "release:css": "tailwindcss -i src/css/styles.css -o public/css/styles.css -m",
+    "release": "npm run release:cljs && npm run release:css"
   },
-  "dependencies": {
+  "devDependencies": {
+    "tailwindcss": "^3.2.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.8",
+    "concurrently": "^7.5.0",
+    "shadow-cljs": "2.20.7"
+  },
+  "dependencies": {
+
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
