@@ -1,4 +1,4 @@
-# tailwind-ui-cljs
+# tailwind-ui-cljs [![Node.js CI](https://github.com/baskeboler/tailwind-ui-cljs/actions/workflows/node.js.yml/badge.svg)](https://github.com/baskeboler/tailwind-ui-cljs/actions/workflows/node.js.yml)
 
 Clojurescript + Tailwind CSS template project.
 
